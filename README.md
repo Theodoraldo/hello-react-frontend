@@ -169,6 +169,6 @@ To run tests, run the following command:
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Theodoraldo/hello-react-frontend/LICENSE) licensed.
+This project is [MIT](https://github.com/Theodoraldo/hello-react-frontend/blob/feature/frontend/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
