@@ -15,18 +15,21 @@ const greetingSlice = createSlice({
   },
 
   extraReducers: {
-    [fetchMessages.pending]: (state) => {
-      state.isLoading = true;
-      state.error = false;
-    },
-    [fetchMessages.fulfilled]: (state, action) => {
-      state.isLoading = false;
-      state.greetings = action.payload;
-    },
-    [fetchMessages.rejected]: (state) => {
-      state.isLoading = false;
-      state.error = true;
-    },
+    [fetchMessages.pending]: (state) => ({
+      ...state,
+      isLoading: true,
+      error: false,
+    }),
+    [fetchMessages.fulfilled]: (state, action) => ({
+      ...state,
+      isLoading: false,
+      greetings: action.payload,
+    }),
+    [fetchMessages.rejected]: (state) => ({
+      ...state,
+      isLoading: false,
+      error: true,
+    }),
   },
 });
 
